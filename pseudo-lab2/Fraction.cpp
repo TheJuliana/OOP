@@ -84,6 +84,7 @@ void someCalculations(std::vector<Fraction>& fractions) {
         auto fraction = fractions[0] * fractions[fractions.size()-1];
         std::cout << "Произведение первой и последней дроби: " << fraction.getNum() << "/" << fraction.getDen() << std::endl;
     } else if (fractions.size() == 1) {
+        fractions[0].getDecimal();
         auto fraction = fractions[0] * fractions[0] * fractions[0];
         std::cout << "Дробь в кубе: " << fraction.getNum() << "/" << fraction.getDen() << std::endl;
     } else {
