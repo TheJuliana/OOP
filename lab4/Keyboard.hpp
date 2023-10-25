@@ -15,7 +15,7 @@ protected:
 	std::stack<Key> _keys;
 	std::vector<std::vector<Key>> _pressedKeys;
 public:
-	void PressKeys(const std::string& string); \
+	void PressKeys(const std::string& string);
 	void Undo();
 	void AddKey(Key key);
 };
