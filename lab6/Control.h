@@ -15,6 +15,7 @@ private:
     Point2D _size;
 public:
     Control() {
+        std::cout << this->getName() << " constructor" << std::endl;
         this->_name = std::string();
         this->_position = Point2D(0, 0);
         this->_size = Point2D(0, 0);

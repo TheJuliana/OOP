@@ -28,7 +28,7 @@ std::string Windows::buildTestPage()
 	btn.setPosition(Point2D(10, 15));
 
 	std::cout << label1.draw()  << std::endl;
-	std::cout << text1.getText() << std::endl;
+	std::cout << text1.draw() << std::endl;
 	std::cout << cmbox1.draw() << std::endl;
 	std::cout << btn.draw() << std::endl;
 	return std::string("-----------------Win App test----------------");

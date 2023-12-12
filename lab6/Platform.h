@@ -8,7 +8,7 @@ private:
 public:
 	Platform() {
 		this->setName(std::string("base class platform"));
-		std::cout << this->getName() << " destructor" << std::endl;
+		std::cout << this->getName() << " constructor" << std::endl;
 	};
 	virtual ~Platform() {
 		std::cout << this->getName() << " destructor" << std::endl;

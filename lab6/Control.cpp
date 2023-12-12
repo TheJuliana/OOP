@@ -43,7 +43,7 @@ void Control::setSize(Point2D size)
 std::string Control::draw()
 {
     std::cout << "\n---------Base class Control draw------------" << std::endl;
-    std::cout << this->getName() << std::endl;
+    std::cout << "Called a method draw() on the control " << this->getName() << std::endl;
     std::cout << "At: " << this->_position.x << " " << this->_position.y << std::endl;
     std::cout << "Size: " << this->_size.x << " " << this->_size.y << std::endl;
     return std::string(this->_name);
