@@ -7,29 +7,28 @@
 std::string MacOS::buildTestPage()
 {
 	Label label1;
-	TextBox text1;
-	ComboBox cmbox1;
+	Label label2;
+	TextBox text;
 	Button btn;
 
 	label1.setText(std::string("MacApp"));
 	label1.setPosition(Point2D(2, 5));
 	label1.setSize(Point2D(3, 10));
 
-	text1.setText(std::string("Test app for MacOS"));
-	text1.setPosition(Point2D(5, 7));
-	text1.setSize(Point2D(4, 15));
+	label2.setText(std::string("Just Label 2"));
+	label2.setPosition(Point2D(5, 5));
+	label2.setSize(Point2D(3, 10));
 
-	cmbox1.addItem(std::string("Var 1"));
-	cmbox1.addItem(std::string("Var 2"));
-	cmbox1.addItem(std::string("Var 3"));
-	cmbox1.setPosition(Point2D(8, 3));
+	text.setText(std::string("This page for MacOS"));
+	text.setPosition(Point2D(8, 7));
+	text.setSize(Point2D(4, 15));
 
 	btn.setText(std::string("Click"));
 	btn.setPosition(Point2D(10, 15));
 
 	std::cout << label1.draw() << std::endl;
-	std::cout << text1.getText() << std::endl;
-	std::cout << cmbox1.draw() << std::endl;
+	std::cout << label2.draw() << std::endl;
+	std::cout << text.draw() << std::endl;
 	std::cout << btn.draw() << std::endl;
 	return std::string("-----------------Mac App test----------------");
 }
