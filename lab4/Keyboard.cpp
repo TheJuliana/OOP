@@ -35,7 +35,7 @@ void Keyboard::Undo() {
 		_keys.pop();
 	}
 	else {
-		std::cout << "\nERROR undo" << std::endl;
+		std::cout << "\nThere is nothing to undo" << std::endl;
 	}
 }
 
