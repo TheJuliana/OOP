@@ -1,15 +1,14 @@
 #include "MacOS.h"
-#include "Label.h"
-#include "TextBox.h"
-#include "ComboBox.h"
-#include "Button.h"
+#include "LabelMac.h"
+#include "TextBoxMac.h"
+#include "ButtonMac.h"
 
 std::string MacOS::buildTestPage()
 {
-	Label label1;
-	Label label2;
-	TextBox text;
-	Button btn;
+	LabelMac label1;
+	LabelMac label2;
+	TextBoxMac text;
+	ButtonMac btn;
 
 	label1.setText(std::string("MacApp"));
 	label1.setPosition(Point2D(2, 5));

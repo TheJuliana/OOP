@@ -1,15 +1,16 @@
 #include "Windows.h"
-#include "Control.h"
-#include "Label.h"
-#include "TextBox.h"
-#include "ComboBox.h"
-#include "Button.h"
+
+#include "LabelWin.h"
+#include "TextBoxWin.h"
+#include "ComboBoxWin.h"
+#include "ButtonWin.h"
+
 std::string Windows::buildTestPage()
 {
-	Label label1;
-	TextBox text1;
-	ComboBox cmbox1;
-	Button btn;
+	LabelWin label1;
+	TextBoxWin text1;
+	ComboBoxWin cmbox1;
+	ButtonWin btn;
 
 	label1.setText(std::string("WinApp"));
 	label1.setPosition(Point2D(2, 5));

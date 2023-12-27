@@ -16,6 +16,6 @@ public:
     virtual ~Label() {};
     void setText(std::string text);
     std::string getText();
-    std::string draw() override;
+    virtual std::string draw() override;
 };
 

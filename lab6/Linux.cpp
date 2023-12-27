@@ -1,17 +1,18 @@
 #include "Linux.h"
-#include "Label.h"
-#include "TextBox.h"
-#include "ComboBox.h"
-#include "Button.h"
+#include "LabelLin.h"
+#include "TextBoxLin.h"
+#include "ComboBoxLin.h"
+#include "ButtonLin.h"
+
 
 std::string Linux::buildTestPage()
 {
-	Label label;
-	TextBox text1;
-	TextBox text2;
-	ComboBox cmbox1;
-	Button btn1;
-	Button btn2;
+	LabelLin label;
+	TextBoxLin text1;
+	TextBoxLin text2;
+	ComboBoxLin cmbox1;
+	ButtonLin btn1;
+	ButtonLin btn2;
 
 	label.setText(std::string("LinuxApp"));
 	label.setPosition(Point2D(2, 5));
