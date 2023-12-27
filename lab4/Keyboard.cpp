@@ -6,11 +6,15 @@
 void Keyboard::PressKeys(const std::string& string) {
 	int k = _pressedKeys.size();
 	const char delim = '+';
+	//введенная строка разделяется по знаку + и вводится в массив _pressedKeys
+	//т.е. происходит симуляция нажатия отдельных клавиш
 	splitString(string, delim, _pressedKeys);
 	if (_pressedKeys.empty()) {
 		std::cout << "ERROR" << std::endl;
 	}
 	else {
+		//здесь команда опять собирается в строку со знаком '+' и отправляется в стек _keys
+		//для дальнейшей возможности отката действий
 		Key  key = Key{};
 		std::string command = "";
 		

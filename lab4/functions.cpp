@@ -21,9 +21,6 @@ void splitString(std::string const& str, const char delim, std::vector<std::vect
 
 void Workflow() {
 	auto keyboard = Keyboard{};
-	auto key = Key{};
-	key.Command = "a";
-	keyboard.AddKey(key);
 
 	keyboard.PressKeys("Shift+a");
 	std::this_thread::sleep_for(std::chrono::milliseconds{ 500 });

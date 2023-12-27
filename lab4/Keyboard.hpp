@@ -12,7 +12,9 @@ struct Key {
 
 class Keyboard {
 protected:
+	//массив использованых команд
 	std::stack<Key> _keys;
+	//массив клавиш, нажатых одновременно
 	std::vector<std::vector<Key>> _pressedKeys;
 public:
 	void PressKeys(const std::string& string);
