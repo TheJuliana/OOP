@@ -10,16 +10,26 @@ struct Key {
 	std::string Command;
 };
 
+struct CommandKey {
+	std::vector<Key> keys;
+	std::string cmdDo;
+	std::string cmdUndo;
+};
 class Keyboard {
 protected:
-	//массив использованых команд
-	std::stack<Key> _keys;
+	//массив использованных команд
+	std::vector<CommandKey> _keys;
 	//массив клавиш, нажатых одновременно
 	std::vector<std::vector<Key>> _pressedKeys;
+
+	void _volumeUp(std::string& cmdUp, std::string& cmdDown);
+	void _volumeDown(std::string& cmdUp, std::string& cmdDown);
+	void _brightnessUp(std::string& cmdUp, std::string& cmdDown);
+	void _brightnessDown(std::string& cmdUp, std::string& cmdDown);
+	void _printKeyboardField();
 public:
 	void PressKeys(const std::string& string);
 	void Undo();
-	void AddKey(Key key);
 };
 
 

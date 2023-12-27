@@ -10,11 +10,11 @@ void splitString(std::string const& str, const char delim, std::vector<std::vect
 
 		Key key = Key{};
 		key.Command = s;
-		std::cout  << key.Command << " ";
+		//std::cout  << key.Command << " ";
 		keys.emplace_back(key);
 
 	}
-	std::cout << std::endl;
+	//std::cout << std::endl;
 	out.emplace_back(keys);
 
 }
@@ -24,13 +24,15 @@ void Workflow() {
 
 	keyboard.PressKeys("Shift+a");
 	std::this_thread::sleep_for(std::chrono::milliseconds{ 500 });
+	keyboard.PressKeys("X");
+	std::this_thread::sleep_for(std::chrono::milliseconds{ 500 });
 	keyboard.PressKeys("b+C");
 	std::this_thread::sleep_for(std::chrono::milliseconds{ 500 });
-	keyboard.PressKeys("Shift+a");
+	keyboard.PressKeys("Shift+d");
 	std::this_thread::sleep_for(std::chrono::milliseconds{ 500 });
 	keyboard.PressKeys("Alt+b");
 	std::this_thread::sleep_for(std::chrono::milliseconds{ 500 });
-	keyboard.Undo();
+	keyboard.PressKeys("Fn+f5");
 	std::this_thread::sleep_for(std::chrono::milliseconds{ 500 });
 	keyboard.Undo();
 	std::this_thread::sleep_for(std::chrono::milliseconds{ 500 });
@@ -41,5 +43,9 @@ void Workflow() {
 	keyboard.Undo();
 	std::this_thread::sleep_for(std::chrono::milliseconds{ 500 });
 	keyboard.Undo();
-
+	std::this_thread::sleep_for(std::chrono::milliseconds{ 500 });
+	keyboard.Undo();
+	std::this_thread::sleep_for(std::chrono::milliseconds{ 500 });
+	keyboard.Undo();
 }
+
