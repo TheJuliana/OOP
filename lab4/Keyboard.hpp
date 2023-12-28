@@ -5,16 +5,19 @@
 #include <vector>
 #include <sstream>
 #include <iostream>
-
-struct Key {
-	std::string Command;
-};
-
-struct CommandKey {
-	std::vector<Key> keys;
-	std::string cmdDo;
-	std::string cmdUndo;
-};
+#include "CommandKey.h"
+#include "Key.h"
+//struct Key {
+//	std::string Command;
+//};
+//
+//struct CommandKey {
+//	std::vector<Key> keys;
+//	std::string cmdDo;
+//	std::string cmdUndo;
+//};
+class Key;
+class CommandKey;
 class Keyboard {
 protected:
 	//массив использованных команд
@@ -22,10 +25,6 @@ protected:
 	//массив клавиш, нажатых одновременно
 	std::vector<std::vector<Key>> _pressedKeys;
 
-	void _volumeUp(std::string& cmdUp, std::string& cmdDown);
-	void _volumeDown(std::string& cmdUp, std::string& cmdDown);
-	void _brightnessUp(std::string& cmdUp, std::string& cmdDown);
-	void _brightnessDown(std::string& cmdUp, std::string& cmdDown);
 	void _printKeyboardField();
 public:
 	void PressKeys(const std::string& string);
