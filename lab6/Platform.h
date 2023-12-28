@@ -1,6 +1,16 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include "Label.h"
+#include "Button.h"
+#include "ComboBox.h"
+#include "TextBox.h"
+
+class Label;
+class Button;
+class ComboBox;
+class TextBox;
+
 class Platform
 {
 private:
@@ -15,7 +25,7 @@ public:
 	};
 	void setName(std::string name);
 	std::string getName();
-	virtual std::string buildTestPage();
+	virtual void buildTestPage(Label& label, TextBox& textbox, ComboBox& cmbox, Button& btn);
 
 };
 

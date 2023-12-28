@@ -6,6 +6,6 @@ public:
 	MacOS() : Platform() {
 		this->setName(std::string("MacOS"));
 	};
-	std::string buildTestPage() override;
+	void buildTestPage(Label& label, TextBox& textbox, ComboBox& cmbox, Button& btn) override;
 };
 

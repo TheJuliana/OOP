@@ -6,6 +6,6 @@ public:
 	Linux() : Platform() {
 		this->setName(std::string("Linux"));
 	};
-	std::string buildTestPage() override;
+	void buildTestPage(Label& label, TextBox& textbox, ComboBox& cmbox, Button& btn) override;
 };
 

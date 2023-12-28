@@ -11,7 +11,7 @@ std::string Platform::getName()
     return std::string(this->_name);
 }
 
-std::string Platform::buildTestPage()
+void Platform::buildTestPage(Label& label, TextBox& textbox, ComboBox& cmbox, Button& btn)
 {
-    return std::string("platf_tp");
+    
 }

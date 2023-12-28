@@ -6,6 +6,6 @@ public:
     Windows() : Platform() {
         this->setName(std::string("Windows"));
     };
-    std::string buildTestPage() override;
+    void buildTestPage(Label& label, TextBox& textbox, ComboBox& cmbox, Button& btn) override;
 };
 
