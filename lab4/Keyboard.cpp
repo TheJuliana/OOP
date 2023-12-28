@@ -31,9 +31,6 @@ void Keyboard::PressKeys(const std::string& string) {
 		std::cout << "ERROR" << std::endl;
 	}
 	else {
-		std::string command = "";
-		std::string cmdUp;
-		std::string cmdDown;
 		CommandKey key = CommandKey();
 		key.setKeys(_pressedKeys[k]);
 		// если нажаты несколько клавиш -> выполняем команду
